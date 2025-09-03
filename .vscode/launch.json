@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome", // Use pwa-chrome for modern VS Code
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:5500", // Update to match your server’s port (e.g., 5500 for Live Server)
+            "webRoot": "${workspaceFolder}", // Adjust if files are in a subdirectory
+            "skipFiles": ["<node_internals>/**"], // Ignore Node.js internal files
+            "timeout": 10000 // Increase timeout if server takes time to start
+        }
+    ]
+}

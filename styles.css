@@ -1,0 +1,355 @@
+body {
+    background-color: rgb(107, 107, 107); /* Dark gray background */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Keep padding at 0 */
+}
+
+.banner {
+    background-image: url('public/Banner1.png');
+    background-size: cover;
+    background-position: center;
+    width: 100vw; /* Full viewport width */
+    height: 40vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    position: relative; /* Needed for absolute positioning of footer */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center; /* Center the text horizontally */
+    padding: 05px 0;    /* Add some padding to make it visible */
+    background-color: #f8f9fa; /* Light gray background for the footer */
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    width: 200px; /* or any other dimension */
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4CAF50; /* Green color for the button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buy-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffa600; /* Orange background */
+    color: rgb(0, 0, 0); /* Black text */
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold; /* Corrected from font-style */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+.button-container {
+    text-align: center; /* Centers the button horizontally */
+    margin-top: 20px; /* Space between banner and button */
+    clear: both; /* Ensure no float interference */
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: chocolate;
+    -webkit-text-stroke: 2px black;
+    font-size: 48px;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    .banner {
+        height: 25vh;
+    }
+    .banner h1 {
+        font-size: 24px;
+        padding: 8px 15px;
+    }
+    .button {
+        padding: 8px 16px; /* Smaller button on mobile */
+        font-size: 14px;
+    }
+    .button-container {
+        margin-top: 10px; /* Less spacing on mobile */
+    }
+}
+
+/* Basic reset */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full viewport height */
+    background-color: rgb(107, 107, 107);
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Header and navigation styles */
+header, nav {
+    background-color: #444;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav .button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a.button {
+    display: inline-block;
+    background-color: #ff6b00; /* A pepper-themed color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a.button:hover {
+    background-color: #e55a00;
+}
+
+/* Main content area */
+main {
+    flex: 1; /* This makes main expand to fill available space */
+    padding: 30px;
+}
+
+h2 {
+    color: #ff6b00;
+    border-bottom: 2px solid #ff6b00;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
+
+/* Basic reset */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full viewport height */
+    background-color: rgb(107, 107, 107);
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Header and navigation styles */
+header, nav {
+    background-color: #444;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav .button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a.button {
+    display: inline-block;
+    background-color: #ff6b00; /* A pepper-themed color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a.button:hover {
+    background-color: #e55a00;
+}
+
+/* Main content area */
+main {
+    flex: 1; /* This makes main expand to fill available space */
+    padding: 30px;
+}
+
+h2 {
+    color: #ff6b00;
+    border-bottom: 2px solid #ff6b00;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
+/* End of styles.css */
+/* Product Pictures size and spacing */
+/* styles.css */
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Product list styling */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Make all product items the same size */
+.product-item {
+  width: 250px; /* Fixed width for each product card */
+  height: 350px; /* Fixed height to match width ratio */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Image styling */
+.product-item img {
+  width: 100%;
+  height: 200px; /* Fixed image area height */
+  object-fit: cover; /* Ensures images fill the area without distortion */
+}
+
+/* Figcaption (product info) styling */
+.product-item figcaption {
+  padding: 15px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-item h3 {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.product-item p {
+  color: #666;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Button styling */
+.buy-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: auto; /* Pushes button to the bottom */
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.buy-button:hover {
+  background-color: #45a049;
+}
+/* End of product spacing */
