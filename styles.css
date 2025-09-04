@@ -8,7 +8,7 @@ body {
     background-image: url('Pepper-Patch-Seeds-Test/Public/Banner1.png');
     background-size: cover;
     background-position: center;
-    width: 150vw; /* Full viewport width */
+    width: 100vw; /* Full viewport width */
     height: 40vh; /* Full viewport height */
     display: flex;
     justify-content: center;
