@@ -22,7 +22,7 @@ body {
 
 /* Banner Styles */
 .banner {
-    background-image: url('public/Banner1.png');
+    background-image: url('Pepper-Patch-Seeds-Test/Public/Banner1.png');
     background-size: cover;
     background-position: center;
     width: 100vw; /* Full viewport width */
